@@ -12,7 +12,7 @@ Allow users to order pages easily in the page overview and also add some clarity
 
 Allow users to order pages easily in the page overview and also add some clarity to the overview. Also includes the Show more pages plugin.
 
-With this plugin it’s really easy for you and your clients to manage pages. You can drag and drop pages to where you want them. Also, with the Show more pages plugin, you can choose how many pages you want to show in the overview. That way, they’re easier to manage.
+With this plugin its really easy for you and your clients to manage pages. You can drag and drop pages to where you want them. Also, with the Show more pages plugin, you can choose how many pages you want to show in the overview. That way, theyre easier to manage.
 
 
 If you have any questions or tips, please contact me at harold@trendwerk.nl or leave  a comment on <a href="http://plugins.trendwerk.nl/">the blog</a>.
