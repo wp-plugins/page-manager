@@ -2,7 +2,7 @@
 Contributors: Ontwerpstudio Trendwerk, Harold Angenent
 Donate link: http://plugins.trendwerk.nl
 Tags: page,order,pageorder,management,overview,more,show,ordering,hierarchy,structure
-Requires at least: 2.8.5
+Requires at least: 2.9.1
 Tested up to: 2.9.1
 Stable tag: 1.0
 
