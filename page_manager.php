@@ -3,13 +3,10 @@
 Plugin Name: Page manager
 Plugin URI: http://plugins.trendwerk.nl/documentation/page-manager/
 Description: Allow users to order pages easily in the page overview and also add some clarity to the overview. Also includes the Show more pages plugin.
-Version: 1.0
+Version: 1.1
 Author: Ontwerpstudio Trendwerk
 Author URI: http://plugins.trendwerk.nl/
 */
-
-//also include the show more pages plugin
-include('show_more_pages.php');
 
 //when adding a new page, it should be last
 function add_last_volgorde($postId) {
@@ -131,7 +128,7 @@ function add_image_in_kolom($columnName) {
 				if($isParent) {
 					$addClass .= ' isParent';
 				}
-				echo '<div style="background:url('.$pluginPath.'/move.png); height: 19px; width: 19px;" class="childPad'.$paddingLeftChilds.' movePageIcons '.$addClass.'" onmousedown="startDrag(this,event);" alt="'.__("Change order","trendwerk").'" /></div>';
+				echo '<div style="background:url('.$pluginPath.'images/move.png); height: 19px; width: 19px;" class="childPad'.$paddingLeftChilds.' movePageIcons '.$addClass.'" onmousedown="startDrag(this,event);" alt="'.__("Change order","trendwerk").'" /></div>';
 			} else {
 				echo '<div class="childPad'.$paddingLeftChilds.' movePageIcons isChild'.$parent.'"></div>';
 			}
