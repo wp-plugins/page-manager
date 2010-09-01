@@ -3,7 +3,7 @@
 Plugin Name: Page manager
 Plugin URI: http://plugins.trendwerk.nl/documentation/page-manager/
 Description: Allow users to order pages easily in the page overview and also add some clarity to the overview. Also includes the Show more pages plugin.
-Version: 1.1
+Version: 2.0
 Author: Ontwerpstudio Trendwerk
 Author URI: http://plugins.trendwerk.nl/
 */
@@ -38,33 +38,37 @@ function keep_last_volgorde($postId) {
 add_action('publish_page','keep_last_volgorde');
 
 function add_verplaats_css() {
-	$pluginPath = WP_PLUGIN_URL.'/'.str_replace(basename( __FILE__),"",plugin_basename(__FILE__)); 
-	echo '
-	<style type="text/css">
-		.column-verplaats {
-			width: 100px;
-		}
-		.column-verplaats div {
-			margin-top: 9px;
-			margin-left: 35px;
-			cursor: move;
-		}
-		.alternate, .iedit {
-			background-color: #eee;	
-		}
-		.childClass {
-			background-color: #fff;
-		}
-	</style>
-	';
+	if($_GET['post_type'] == 'page') {
+		$pluginPath = WP_PLUGIN_URL.'/'.str_replace(basename( __FILE__),"",plugin_basename(__FILE__)); 
+		echo '
+		<style type="text/css">
+			.column-verplaats {
+				width: 100px;
+			}
+			.column-verplaats div {
+				margin-top: 9px;
+				margin-left: 35px;
+				cursor: move;
+			}
+			.alternate, .iedit {
+				background-color: #eee;	
+			}
+			.childClass {
+				background-color: #fff;
+			}
+		</style>
+		';
+	}
 }
-add_action('admin_head-edit-pages.php','add_verplaats_css');
+add_action('admin_head-edit.php','add_verplaats_css');
 
 function add_verplaats_js() {
-	$pluginPath = WP_PLUGIN_URL.'/'.str_replace(basename( __FILE__),"",plugin_basename(__FILE__)); 
-	echo '<script type="text/javascript" src="'.$pluginPath.'js/verplaats.js"></script>';	
+	if($_GET['post_type'] == 'page') {
+		$pluginPath = WP_PLUGIN_URL.'/'.str_replace(basename( __FILE__),"",plugin_basename(__FILE__)); 
+		echo '<script type="text/javascript" src="'.$pluginPath.'js/verplaats.js"></script>';	
+	}
 }
-add_action('admin_head-edit-pages.php','add_verplaats_js');
+add_action('admin_head-edit.php','add_verplaats_js');
 
 function add_verplaats_kolom($huidig) {
 	unset($huidig['date']);
