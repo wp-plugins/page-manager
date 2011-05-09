@@ -2,8 +2,8 @@
 /*
 Plugin Name: Page manager
 Plugin URI: http://plugins.trendwerk.nl/documentation/page-manager/
-Description: Allow users to order pages easily in the page overview and also add some clarity to the overview. Also includes the Show more pages plugin.
-Version: 2.0
+Description: This plugin is no longer supported! Use WP's Custom Menu! Allow users to order pages easily in the page overview and also add some clarity to the overview. Also includes the Show more pages plugin.
+Version: 2.1
 Author: Ontwerpstudio Trendwerk
 Author URI: http://plugins.trendwerk.nl/
 */

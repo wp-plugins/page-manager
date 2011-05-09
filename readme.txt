@@ -4,13 +4,13 @@ Donate link: http://plugins.trendwerk.nl
 Tags: page,order,pageorder,management,overview,more,show,ordering,hierarchy,structure
 Requires at least: 2.8.5
 Tested up to: 2.9.1
-Stable tag: 2.0
+Stable tag: 2.1
 
-Allow users to order pages easily in the page overview and also add some clarity to the overview. Also includes the Show more pages plugin.
+This plugin is no longer supported! Use WP's Custom Menu! Allow users to order pages easily in the page overview and also add some clarity to the overview. Also includes the Show more pages plugin.
 
 == Description ==
 
-Allow users to order pages easily in the page overview and also add some clarity to the overview. Also includes the Show more pages plugin.
+This plugin is no longer supported! Use WP's Custom Menu! Allow users to order pages easily in the page overview and also add some clarity to the overview. Also includes the Show more pages plugin.
 
 With this plugin its really easy for you and your clients to manage pages. You can drag and drop pages to where you want them. Also, with the Show more pages plugin, you can choose how many pages you want to show in the overview. That way, theyre easier to manage.
 
